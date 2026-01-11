@@ -79,7 +79,10 @@ JWT-based auth (src/lib/auth.ts):
 - Anonymous users: projects not saved, files only in memory
 - Authenticated users: projects persisted to database with userId
 
-### Data Models (prisma/schema.prisma)
+### Data Models
+Reference `prisma/schema.prisma` for the complete database structure and relationships.
+
+Key models:
 - **User**: id, email, password (bcrypt hashed), timestamps
 - **Project**: id, name, userId (nullable for anon), messages (JSON), data (JSON with serialized VirtualFileSystem), timestamps
 - SQLite database, Prisma client generated to `src/generated/prisma`
