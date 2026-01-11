@@ -91,6 +91,11 @@ Language model selection (src/lib/provider.ts):
 - If absent: uses `MockLanguageModel` that returns static component templates
 - Mock provider demonstrates the app without API costs
 
+## Code Style
+
+### Comments
+Only add comments where the code is complex or non-obvious. Prefer self-documenting code with clear variable and function names over excessive comments.
+
 ## Key Patterns
 
 ### File System Operations
